@@ -27,7 +27,7 @@ namespace CacheMiss
         {
             services.AddTransient<LocalCacheProvider>();
             services.AddTransient(_ => new RedisProvider(new RedisCacheManager(redisConnection)));
-            services.AddDbContext<T>(options => options.UseSqlServer(dbConnection));
+            services.AddDbContextPool<T>(options => options.UseSqlServer(dbConnection));
 
             var typesWithMyAttribute =
             from a in System.AppDomain.CurrentDomain.GetAssemblies()
