@@ -14,7 +14,7 @@ using System.IO.Compression;
 
 namespace CacheMiss
 {
-    public class RedisCacheManager
+    public class RedisCacheManager : IDisposable
     {
         #region Field
 
@@ -126,6 +126,12 @@ namespace CacheMiss
             {
                 return default;
             }
+        }
+
+        public void Dispose()
+        {
+            if (_lazyConnection.IsValueCreated)
+                _lazyConnection.Value.Dispose();
         }
 
         #endregion

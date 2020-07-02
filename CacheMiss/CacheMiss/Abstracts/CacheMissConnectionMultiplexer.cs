@@ -37,7 +37,7 @@ namespace CacheMiss.Abstracts
             }
             catch
             {
-                if (CacheMissSettings.FakeConnection)
+                if (!CacheMissSettings.FakeConnection)
                     throw;
 
                 FakeConnectionMultiplexer = new FakeConnectionMultiplexer();

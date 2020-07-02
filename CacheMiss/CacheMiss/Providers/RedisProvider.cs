@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace CacheMiss
 {
-    public class RedisProvider : ICacheProvider
+    public class RedisProvider : ICacheProvider, IDisposable
     {
         #region Field
 
@@ -87,6 +87,11 @@ namespace CacheMiss
                 return;
 
             await _RedisCacheManager.Database.StringSetAsync(key, _RedisCacheManager.SerializeData(data), cacheTime);
+        }
+
+        public void Dispose()
+        {
+            _RedisCacheManager.Dispose();
         }
 
         #endregion
