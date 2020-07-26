@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>CacheMiss.DropMemoryCache</id>
+    <version>1.0.17</version>
+    <title>DropMemoryCache all instances</title>
+    <authors>TATLISU Ltd.</authors>
+    <owners>Ferdi TATLISU</owners>
+    <license type="file">license.txt</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>You can drop memory cache on all instances</description>
+    <releaseNotes>Initial 1.0.0 debug mode</releaseNotes>
+    <copyright>Copyright 2020 Ferdi TATLISU</copyright>
+    <tags>cacheManager cache .net core cachemiss redis memory drop</tags>
+    <dependencies>
+      <dependency id="Microsoft.Extensions.Caching.Memory" version="3.1.6" />
+      <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="3.1.6" />
+      <dependency id="StackExchange.Redis" version="2.1.58" />
+    </dependencies>
+    <summary> This is beta version of cache :) </summary>
+  </metadata>
+  <files>
+    <file src="license.txt" target="" />
+  </files>
+</package>

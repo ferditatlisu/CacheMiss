@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CacheMiss", "CacheMiss\CacheMiss.csproj", "{DB4DF123-80DC-41D8-8E6D-64C1A36BEE73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheMiss.DropMemoryCache", "CacheMiss\CacheMiss.DropMemoryCache\CacheMiss.DropMemoryCache.csproj", "{1654C6EB-CA4E-4F41-9951-C70FF09888DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheMiss.DropMemoryCache", "CacheMiss.DropMemoryCache\CacheMiss.DropMemoryCache.csproj", "{1654C6EB-CA4E-4F41-9951-C70FF09888DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -6,3 +6,5 @@ CacheMiss/CacheMiss/Nuget.cachemiss.nuspec
 CacheMiss/.vs/
 CacheMiss/CacheMiss/CacheMiss.DropMemoryCache/obj/
 CacheMiss/CacheMiss/CacheMiss.DropMemoryCache/bin/
+CacheMiss/CacheMiss.DropMemoryCache/obj/
+CacheMiss/CacheMiss.DropMemoryCache/bin/
